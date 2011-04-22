@@ -26,4 +26,5 @@ files, ready for your inspection and incorporation into your tests.  Other
 features include support for spliced reads and a rather verbose debug mode so
 you can follow exactly how the gene models and reads are being parsed.
 
-Tutorial coming soon.
+See full documentation at http://gdc.genomicnorth.com.
+
