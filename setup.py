@@ -14,12 +14,10 @@ Make BED, GFF, FASTA, SAM, and BAM files for testing your packages""",
       author_email='dalerr@niddk.nih.gov',
       url='',
       license='',
-      packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
-      include_package_data=True,
+      packages=['gdc','gdc.test', 'gdc.test.data'],
+      package_data={'gdc':['test/data/*']},
+      package_dir={'gdc': 'gdc'},
       zip_safe=False,
-      install_requires=[
-          # -*- Extra requirements: -*-
-      ],
       entry_points="""
       # -*- Entry points: -*-
       """,
