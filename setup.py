@@ -14,11 +14,10 @@ Make BED, GFF, FASTA, SAM, and BAM files for testing your packages""",
       author_email='dalerr@niddk.nih.gov',
       url='',
       license='',
-      packages=['gdc','gdc.test', 'gdc.test.data'],
+      packages=['gdc','gdc.test', 'gdc.scripts', 'gdc.test.data'],
       package_data={'gdc':['test/data/*']},
       package_dir={'gdc': 'gdc'},
+      scripts=['gdc/scripts/gdc_parse_model.py'],
       zip_safe=False,
-      entry_points="""
-      # -*- Entry points: -*-
-      """,
+      install_requires=['argparse', 'GFFutils'],
       )
